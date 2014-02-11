@@ -55,5 +55,7 @@
     <None Include="NOTICE" />
     <None Include="LICENSE" />
     <None Include="README.md" />
+    <None Include="HISTORY.rst" />
+    <None Include="TODO" />
   </ItemGroup>
 </Project>
