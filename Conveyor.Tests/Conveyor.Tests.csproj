@@ -30,9 +30,26 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\Voyage\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ConveyorTest.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\..\NDeproxy\NDeproxy.csproj">
+      <Project>{811FC8FD-7DAD-47CC-8FC9-87CD4A38F823}</Project>
+      <Name>NDeproxy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Conveyor.csproj">
+      <Project>{B88D764B-2881-41C3-A047-F16146C4502B}</Project>
+      <Name>Conveyor</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
 </Project>
