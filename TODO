@@ -1,1 +1,7 @@
 
+in no particular order:
+
+Merge Server and ListenerThread
+support streams, textreaders, textwriters for message bodies
+test for rfc 2616 http compliance
+test for rfc 3986 uri compliance
